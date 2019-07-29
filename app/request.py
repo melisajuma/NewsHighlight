@@ -30,7 +30,7 @@ def configure_request(app):
 
 def get_newsource(category):
     '''
-    Function that gets the json response to our url request>
+    Function that gets the json response to our url request
     '''
     get_newsource_url = base_url.format(category,api_key)
     print(get_newsource_url)
@@ -50,7 +50,7 @@ def get_newsource(category):
 
 def process_results(newsource_list):
     '''
-    Function  that processes the new source result and transform them to a list of Objects
+    Function  that processes the new source result and transform them to a list of Objects>
 
     Args:
         newsource_list: A list of dictionaries that contain news source details
