@@ -1,4 +1,4 @@
-from flask import render_template,request,redirect, url_for
+from flask import render_template,request,redirect, url_for>
 from . import main
 from ..request import get_newsource,get_articles,get_topheadlines, get_everything, search_article
 
