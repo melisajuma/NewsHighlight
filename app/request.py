@@ -4,7 +4,7 @@ from datetime import datetime
 from .models import Source
 from .models import Article
 
-# Getting api key>
+# Getting api key
 api_key = None
 #Getting the movie base url
 base_url = None
@@ -18,7 +18,7 @@ everything_url = None
 search_url = None
 
 
-def configure_request(app):
+def configure_request(app):>
     global api_key,base_url,article_url,topheadline_url,everything_url,search_url
     api_key = app.config['NEWS_API_KEY']
     base_url = app.config["SOURCE_API_BASE_URL"]
