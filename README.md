@@ -1,4 +1,4 @@
-# News Highlights>
+# News Highlights
 
 # Author
 Melisa JUma 28.07.2019
