@@ -1,77 +1,82 @@
 {% extends 'base.html'%}
-{% import 'macros.html' as macro %}
+{% import 'macros.html' as macro%}
 
+<!-- Styles block -->
 
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+{% endblock %}
 
 <!-- Content block -->
 {% block content %}
-
-<!-- Landing Page -->
-<div class="landing">
-    <div class="cover container-fluid">
-        <div class="heading">
-            <div class="row">
-                <div class="col-md-7 title">
-                    <p>YOUR HOME <br> FOR TRENDING NEWS</p>
-                </div>
-                <div class="col-md-5 pagetitle">
-                    <p id ="fadeIn"><span class="first">YOUR ONE STOP TO</span> <br> <strong> ALL NEWS SOURCES</strong></p>
-                </div>
+<div class=" container">
+<div class="">
+    <div class="page_name"> 
+        <h1 style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:30px;font-weight:bolder">YOUR HOME<br>FOR TRENDING NEWS!</h1> 
+    </div>
+    <!-- General Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="general" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">General News</h3>
+        
+            <div class="row ">
+            <div class="card-deck" style="size=18e">
+            {{ macro.displayNewsList(general) }}
             </div>
-        </div>
+            </div>
+        
+    </div>
+<!-- Business Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="business" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">Business News</h3>
+        <ul>
+            <div class="row">
+            {{ macro.displayNewsList(business) }}
+            </div>
+        </ul>
+    </div>
+    <!-- Technology Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="technology" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">Technology News</h3>
+        <ul>
+            <div class="row">
+            {{ macro.displayNewsList(technology) }}
+            </div>
+        </ul>
+    </div>
+    <!-- Science Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="science" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">Science News</h3>
+        <ul>
+            <div class="row">
+            {{ macro.displayNewsList(science) }}
+            </div>
+        </ul>
+    </div>
+    <!-- Health Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="health" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">Health News</h3>
+        <ul>
+            <div class="row">
+            {{ macro.displayNewsList(health) }}
+            </div>
+        </ul>
+    </div>
+    <!-- Sports Sources section  -->
+    <hr />
+    <div class="source_section">
+        <h3 id="sports" class="source_section_name" style="text-align:center;font-family: 'Noto Sans', sans-serif; font-size:22px;font-weight:bolder">Sports News</h3>
+        <ul>
+            <div class="row">
+            {{ macro.displayNewsList(sports) }}
+            </div>
+        </ul>
     </div>
 </div>
-
-
-<!-- Body section -->
-    <div class="container wrapper scroll">
-        <div class="row" id="general">
-            <div class="category col-md-12">
-                <h4 class="source_title"> All Stories</h4>
-                <ul>
-                    {{macro.displayNewsourceList(general)}}
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="business">
-            <div class="category col-md-12">
-                <h4 class="source_title">Business News</h4>
-                <ul>
-                    {{macro.displayNewsourceList(business)}}
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="technology">
-            <div class="category col-md-12">
-                <h4 class="source_title">Technology News</h4>
-                <ul>
-                    {{macro.displayNewsourceList(technology)}}
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="sports">
-            <div class="category col-md-12">
-                <h4 class="source_title">Sports News</h4>
-                <ul>
-                    {{macro.displayNewsourceList(sports)}}
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="entertainment">
-            <div class="category col-md-12">
-                <h4 class="source_title">Entertainment News</h4>
-                <ul>
-                    {{macro.displayNewsourceList(entertainment)}}
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="science">
-            <div class="category col-md-12">
-                <h4 class="source_title">Sciencific News</h4>
-                <ul>
-                    {{macro.displayNewsourceList(science)}}
-                </ul>
-            </div>
-        </div>
-    </div>
 {% endblock%}
