@@ -18,7 +18,7 @@ everything_url = None
 search_url = None
 
 
-def configure_request(app):>
+def configure_request(app):
     global api_key,base_url,article_url,topheadline_url,everything_url,search_url
     api_key = app.config['NEWS_API_KEY']
     base_url = app.config["SOURCE_API_BASE_URL"]
@@ -30,7 +30,7 @@ def configure_request(app):>
 
 def get_newsource(category):
     '''
-    Function that gets the json response to our url request
+    Function that gets the json response to our url request>
     '''
     get_newsource_url = base_url.format(category,api_key)
     print(get_newsource_url)
