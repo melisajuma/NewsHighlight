@@ -95,7 +95,7 @@ def get_articles(source_id,limit):
 
 def process_articles(articles_list):
     '''
-    Function  that processes the new articles and transform them to a list of Objects>
+    Function  that processes the new articles and transform them to a list of Objects
 
     Args:
         articles_list: A list of dictionaries that contain article details
