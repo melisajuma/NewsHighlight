@@ -76,7 +76,7 @@ def all_news(per_page):
 @main.route('/search/<article_name>')
 def search(article_name):
     '''
-    View function to display search results
+    View function to display search results>
     '''
     article_name_list = article_name.split(" ")
     article_name_format = "+".join(article_name_list)
