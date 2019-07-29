@@ -45,7 +45,7 @@ def articles(source_id,per_page):
 @main.route('/topheadlines&<int:per_page>')
 def topheadlines(per_page):
     '''
-    Function that returns top headline articles
+    Function that returns top headline articles>
     '''
 
     topheadlines_news = get_topheadlines(per_page)
