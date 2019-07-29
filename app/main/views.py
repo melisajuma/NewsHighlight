@@ -1,4 +1,4 @@
-from flask import render_template,request,redirect, url_for>
+from flask import render_template,request,redirect, url_for
 from . import main
 from ..request import get_newsource,get_articles,get_topheadlines, get_everything, search_article
 
@@ -8,7 +8,7 @@ from ..request import get_newsource,get_articles,get_topheadlines, get_everythin
 def index():
 
     '''
-    View root page function that returns the index page and its data
+    View root page function that returns the index page and its data>
     '''
     #Getting news sources
     general_newsource = get_newsource('general')
