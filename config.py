@@ -2,7 +2,7 @@ import os
 
 class Config:
     '''
-    General configuration parent class>
+    General configuration parent class
     '''
     SOURCE_API_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
     EVERYTHING_SOURCE_BASE_URL = 'https://newsapi.org/v2/everything?sources={}&pageSize={}&apiKey={}'
