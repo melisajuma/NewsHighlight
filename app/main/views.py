@@ -8,7 +8,7 @@ from ..request import get_newsource,get_articles,get_topheadlines, get_everythin
 def index():
 
     '''
-    View root page function that returns the index page and its data>
+    View root page function that returns the index page and its data
     '''
     #Getting news sources
     general_newsource = get_newsource('general')
@@ -29,7 +29,7 @@ def index():
 @main.route('/articles/<source_id>&<int:per_page>')
 def articles(source_id,per_page):
     '''
-    View article page function returns the articles based on a new source
+    View article page function returns the articles based on a new source>
     '''
 
     #Getting articles
