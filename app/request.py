@@ -75,7 +75,7 @@ def process_results(newsource_list):
 
 def get_articles(source_id,limit):
     '''
-    Function that gets the json response to our url request
+    Function that gets the json response to our url request>
     '''
     get_articles_url = article_url.format(source_id,limit,api_key)
     print(get_articles_url)
