@@ -3,7 +3,7 @@ $('body')
     event.preventDefault();
     var $input = $('form.fourteen input');
     $input.focus();
-    if ($input.val().length() > 0) {>
+    if ($input.val().length() > 0) {
     // submit form
     }
 })
