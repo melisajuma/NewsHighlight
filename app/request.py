@@ -1,4 +1,4 @@
-import urllib.request,json >
+import urllib.request,json 
 from datetime import datetime
 
 from .models import Source
