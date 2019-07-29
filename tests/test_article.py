@@ -20,7 +20,7 @@ class SourceTest(unittest.TestCase):
         '''
         self.assertTrue(isinstance(self.new_article,Article))
 
-    def test_init(self):>
+    def test_init(self):
         '''
         Test case to test if object is initialized properly
         '''
