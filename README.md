@@ -21,10 +21,10 @@ News Highlights is a web application that will help users list and preview news 
 | View Categories of news sources<br>(Technology, entertainment, sports etc)| Click on `Categories` drop down then on specific category e.g. `Technology` | Scrolls down to Technology news sources|
 |View Top Headlines | Click on `Top Headlines` button | Redirects to the Top Headlines article page  |
 | View All Articles | Click on  `All Articles`| Redirects to the All Articles page |
-| Search for an article by keyword | Type any keyword in `search bar` e.g. `Jack Ma`| Redirects to search page with all the search results for Jack Ma|
+| Search for an article by keyword | Type any keyword in `search bar` e.g. `Uhuru`| Redirects to search page with all the search results for Jack Ma|
 
 ## View Live Site here
-View the complete site [here]
+View the complete site [https://newshighlightz.herokuapp.com/]
 
 
 ## Technologies Used
@@ -39,8 +39,8 @@ View the complete site [here]
     2. Create a virtual environment
     3. Read the specs and requirements files and Install all the requirements.
     4. Edit the start.sh file with your api key from the news.org website   
-    6. Run chmod a+x start.py
-    7. Run ./start.py
+    6. Run chmod a+x start.sh
+    7. Run ./start.sh
     8. Access the application through `localhost:5000`
 
 ## Known bugs
